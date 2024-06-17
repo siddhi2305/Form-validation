@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #ebebeb;
+}
+.RegisterForm{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    padding: 50px 100px;
+    align-items: center;
+    background: url('img1.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+.container{
+    position: absolute;
+    border-radius: 3%;
+    width: 40%;
+    height: 500px;
+    padding: 40px;
+    background: rgba(121,145, 97, 0.5);
+    transition: 0.5s;
+}
+.container:hover{
+    transform: translateY(-10px);
+}
+.container h2{
+    font-size: 30px;
+    color: rgb(62,83,42);
+    font-weight: 500;
+}
+.container .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.container .inputBox input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.container .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.container .inputBox input:focus ~ span, 
+.container .inputBox input:valid ~ span{
+    color: #000000;
+    font-size: 15px;
+    transform: translateY(-26px);
+}
+.container button{
+    width: 120px;
+    height: 50px;
+    background-color: #3e532a;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10%;
+    color: #fff ;
+}
